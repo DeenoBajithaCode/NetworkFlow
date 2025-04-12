@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String folderPath = "../benchmarks"; // adjust if needed
+        String folderPath = "benchmarks"; // adjust if needed
         List<File> benchmarkFiles = Utils.getBenchmarkFiles(folderPath);
 
         FileWriter writer = new FileWriter("results.csv");

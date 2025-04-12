@@ -1,11 +1,11 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * Name: Deeno Bajitha
  * Student ID: w1959883
  * Module: 5SENG003W - Data structures and Algorithms
  **/
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class MaxFlowSolver {
     private boolean[] marked;
     private FlowEdge[] edgeTo;
