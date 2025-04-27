@@ -3,10 +3,16 @@
  * Student ID: w1959883
  * Module: 5SENG003W - Data structures and Algorithms
 **/
+import algorithm.FlowNetwork;
+import algorithm.MaxFlowSolver;
+import algorithm.Utils;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+
+import static algorithm.SearchType.BFS;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -23,7 +29,7 @@ public class Main {
             MaxFlowSolver solver = new MaxFlowSolver();
 
             long start = System.currentTimeMillis();
-            int maxFlow = solver.computeMaxFlow(network, 0, network.size() - 1);
+            int maxFlow = solver.computeMaxFlow(network, 0, network.size() - 1, BFS);
             long end = System.currentTimeMillis();
 
             long duration = end - start;
